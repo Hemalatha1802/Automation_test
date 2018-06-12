@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Currency Suite">
+  <test name="Currency" preserve-order="true">
+		<classes>
+			<class name="com.mode.TestNG.globalConfiguration.CurrencyTest">
+				<methods>
+					
+					<include name="login" />
+					<include name="createCurrencyRecord" />
+					<include name="searchMaker" />
+					<include name="edit" />
+					<include name="auditLog" />
+					<include name="logout" />
+								
+
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite> <!-- Suite -->

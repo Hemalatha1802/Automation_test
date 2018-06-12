@@ -1,0 +1,255 @@
+<html>
+<head>
+<title>TestNG:  Don't Disturb Timing</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Don't Disturb Timing</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>17/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Oct 23 14:31:00 IST 2017</td>
+</tr>
+<tr><td>Total time:</td><td>67 seconds (67553 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.mode.TestNG.customerMaintenance.DonotDisturb.approvalHistory()'><b>approvalHistory</b><br>Test class: com.mode.TestNG.customerMaintenance.DonotDisturb<br/>
+<a href="#Output-1415630650" onClick='toggleBox("Output-1415630650", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1415630650" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1415630650">
+ Do Not Disturb Timing Approval History test case pass<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.mode.TestNG.customerMaintenance.DonotDisturb@4566e5bd</td></tr>
+<tr>
+<td title='com.mode.TestNG.customerMaintenance.DonotDisturb.approve()'><b>approve</b><br>Test class: com.mode.TestNG.customerMaintenance.DonotDisturb<br/>
+<a href="#Output-948250363" onClick='toggleBox("Output-948250363", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-948250363" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-948250363">
+Do Not Disturb Timing record Approved<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>com.mode.TestNG.customerMaintenance.DonotDisturb@4566e5bd</td></tr>
+<tr>
+<td title='com.mode.TestNG.customerMaintenance.DonotDisturb.auditLog()'><b>auditLog</b><br>Test class: com.mode.TestNG.customerMaintenance.DonotDisturb<br/>
+<a href="#Output-1543043602" onClick='toggleBox("Output-1543043602", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1543043602" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1543043602">
+ Do Not Disturb Timing Audit Log test case pass<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>com.mode.TestNG.customerMaintenance.DonotDisturb@4566e5bd</td></tr>
+<tr>
+<td title='com.mode.TestNG.customerMaintenance.DonotDisturb.checkerLogin()'><b>checkerLogin</b><br>Test class: com.mode.TestNG.customerMaintenance.DonotDisturb</td>
+<td></td>
+<td>3</td>
+<td>com.mode.TestNG.customerMaintenance.DonotDisturb@4566e5bd</td></tr>
+<tr>
+<td title='com.mode.TestNG.customerMaintenance.DonotDisturb.checkerLogout()'><b>checkerLogout</b><br>Test class: com.mode.TestNG.customerMaintenance.DonotDisturb</td>
+<td></td>
+<td>1</td>
+<td>com.mode.TestNG.customerMaintenance.DonotDisturb@4566e5bd</td></tr>
+<tr>
+<td title='com.mode.TestNG.customerMaintenance.DonotDisturb.edit()'><b>edit</b><br>Test class: com.mode.TestNG.customerMaintenance.DonotDisturb<br/>
+<a href="#Output-2001321875" onClick='toggleBox("Output-2001321875", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2001321875" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2001321875">
+Updated Do Not Disturb Timing details<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>com.mode.TestNG.customerMaintenance.DonotDisturb@4566e5bd</td></tr>
+<tr>
+<td title='com.mode.TestNG.customerMaintenance.DonotDisturb.login()'><b>login</b><br>Test class: com.mode.TestNG.customerMaintenance.DonotDisturb<br/>
+<a href="#Output-1644236636" onClick='toggleBox("Output-1644236636", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1644236636" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1644236636">
+Logged into Application <br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.mode.TestNG.customerMaintenance.DonotDisturb@4566e5bd</td></tr>
+<tr>
+<td title='com.mode.TestNG.customerMaintenance.DonotDisturb.logout()'><b>logout</b><br>Test class: com.mode.TestNG.customerMaintenance.DonotDisturb</td>
+<td></td>
+<td>1</td>
+<td>com.mode.TestNG.customerMaintenance.DonotDisturb@4566e5bd</td></tr>
+<tr>
+<td title='com.mode.TestNG.customerMaintenance.DonotDisturb.register()'><b>register</b><br>Test class: com.mode.TestNG.customerMaintenance.DonotDisturb<br/>
+<a href="#Output-909282611" onClick='toggleBox("Output-909282611", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-909282611" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-909282611">
+Do Not Disturb Timing record is created <br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>com.mode.TestNG.customerMaintenance.DonotDisturb@4566e5bd</td></tr>
+<tr>
+<td title='com.mode.TestNG.customerMaintenance.DonotDisturb.searchAdmin()'><b>searchAdmin</b><br>Test class: com.mode.TestNG.customerMaintenance.DonotDisturb<br/>
+<a href="#Output-1528741718" onClick='toggleBox("Output-1528741718", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1528741718" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1528741718">
+Search Do Not Disturb Timing successful<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>com.mode.TestNG.customerMaintenance.DonotDisturb@4566e5bd</td></tr>
+<tr>
+<td title='com.mode.TestNG.customerMaintenance.DonotDisturb.searchChecker()'><b>searchChecker</b><br>Test class: com.mode.TestNG.customerMaintenance.DonotDisturb<br/>
+<a href="#Output-1289869008" onClick='toggleBox("Output-1289869008", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1289869008" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1289869008">
+performed search based on CIF<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>com.mode.TestNG.customerMaintenance.DonotDisturb@4566e5bd</td></tr>
+<tr>
+<td title='com.mode.TestNG.customerMaintenance.DonotDisturb.searchMaker()'><b>searchMaker</b><br>Test class: com.mode.TestNG.customerMaintenance.DonotDisturb<br/>
+<a href="#Output-86558824" onClick='toggleBox("Output-86558824", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-86558824" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-86558824">
+performed search based on CIF Number<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>com.mode.TestNG.customerMaintenance.DonotDisturb@4566e5bd</td></tr>
+<tr>
+<td title='com.mode.TestNG.customerMaintenance.DonotDisturb.selectAdmin()'><b>selectAdmin</b><br>Test class: com.mode.TestNG.customerMaintenance.DonotDisturb<br/>
+<a href="#Output-1370283822" onClick='toggleBox("Output-1370283822", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1370283822" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1370283822">
+Do Not Disturb Timing menu selected<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>com.mode.TestNG.customerMaintenance.DonotDisturb@4566e5bd</td></tr>
+<tr>
+<td title='com.mode.TestNG.customerMaintenance.DonotDisturb.selectChecker()'><b>selectChecker</b><br>Test class: com.mode.TestNG.customerMaintenance.DonotDisturb</td>
+<td></td>
+<td>3</td>
+<td>com.mode.TestNG.customerMaintenance.DonotDisturb@4566e5bd</td></tr>
+<tr>
+<td title='com.mode.TestNG.customerMaintenance.DonotDisturb.selectingMaker()'><b>selectingMaker</b><br>Test class: com.mode.TestNG.customerMaintenance.DonotDisturb<br/>
+<a href="#Output-1703009290" onClick='toggleBox("Output-1703009290", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1703009290" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1703009290">
+Selected Do Not Disturb Timing Menu<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.mode.TestNG.customerMaintenance.DonotDisturb@4566e5bd</td></tr>
+<tr>
+<td title='com.mode.TestNG.customerMaintenance.DonotDisturb.submitRecord()'><b>submitRecord</b><br>Test class: com.mode.TestNG.customerMaintenance.DonotDisturb<br/>
+<a href="#Output-849776463" onClick='toggleBox("Output-849776463", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-849776463" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-849776463">
+Do Not Disturb Timing record submitted successfully<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>com.mode.TestNG.customerMaintenance.DonotDisturb@4566e5bd</td></tr>
+<tr>
+<td title='com.mode.TestNG.customerMaintenance.DonotDisturb.view()'><b>view</b><br>Test class: com.mode.TestNG.customerMaintenance.DonotDisturb<br/>
+<a href="#Output-1406919011" onClick='toggleBox("Output-1406919011", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1406919011" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1406919011">
+View Do Not Disturb Timing record Successful<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>com.mode.TestNG.customerMaintenance.DonotDisturb@4566e5bd</td></tr>
+</table><p>
+</body>
+</html>

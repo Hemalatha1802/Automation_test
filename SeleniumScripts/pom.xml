@@ -1,0 +1,132 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>Automation</groupId>
+	<artifactId>SeleniumScripts</artifactId>
+	<version>1.0</version>
+	<name>MavenProject</name>
+
+
+	<build>
+		<plugins>
+
+			<!-- Below plug-in is used to execute tests -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+
+				<configuration>
+					<suiteXmlFiles>
+						<!-- TestNG suite XML files -->
+						<suiteXmlFile>./TestScripts/screenShot.xml</suiteXmlFile>
+						<suiteXmlFile>./TestScripts/customer.xml</suiteXmlFile>
+						<!-- <suiteXmlFile>./TestScripts/account.xml</suiteXmlFile>
+						<suiteXmlFile>./TestScripts/customerMaintenance/customerReq.xml</suiteXmlFile>
+						<suiteXmlFile>./TestScripts/customerMaintenance/accountReq.xml</suiteXmlFile>
+						<suiteXmlFile>./TestScripts/customerMaintenance/customerInfo.xml</suiteXmlFile>
+						<suiteXmlFile>./TestScripts/customerMaintenance/doNotDisturb.xml</suiteXmlFile>
+						<suiteXmlFile>./TestScripts/configuration/custCategory.xml</suiteXmlFile>
+						<suiteXmlFile>./TestScripts/configuration/chargeType.xml</suiteXmlFile>
+						<suiteXmlFile>./TestScripts/configuration/servicePermission.xml</suiteXmlFile>
+						<suiteXmlFile>./TestScripts/partners/biller.xml</suiteXmlFile>
+						<suiteXmlFile>./TestScripts/partners/airtimeProvider.xml</suiteXmlFile>
+						<suiteXmlFile>./TestScripts/partners/atmBranch.xml</suiteXmlFile>
+						<suiteXmlFile>./TestScripts/wallet/walletCustomer.xml</suiteXmlFile>
+						<suiteXmlFile>./TestScripts/wallet/walletAccount.xml</suiteXmlFile>
+						<suiteXmlFile>./TestScripts/wallet/walletDeposit.xml</suiteXmlFile>
+						<suiteXmlFile>./TestScripts/wallet/walletWithdraw.xml</suiteXmlFile>
+						<suiteXmlFile>./TestScripts/jointAccount/accountReq.xml</suiteXmlFile>
+						<suiteXmlFile>./TestScripts/jointAccount/jApprover.xml</suiteXmlFile>
+						<suiteXmlFile>./TestScripts/user.xml</suiteXmlFile>
+						<suiteXmlFile>./TestScripts/userInfoUpdate.xml</suiteXmlFile>
+						<suiteXmlFile>./TestScripts/userRequest.xml</suiteXmlFile>
+						<suiteXmlFile>./TestScripts/bulkSMS.xml</suiteXmlFile>
+						<suiteXmlFile>./TestScripts/bulkEmail.xml</suiteXmlFile>
+						<suiteXmlFile>./TestScripts/payment/bulkPayment.xml</suiteXmlFile>
+						<suiteXmlFile>./TestScripts/globalConfiguration/messageTemplate.xml</suiteXmlFile>
+						<suiteXmlFile>./TestScripts/globalConfiguration/permission.xml</suiteXmlFile>
+						<suiteXmlFile>./TestScripts/globalConfiguration/interfacePermission.xml</suiteXmlFile>
+						<suiteXmlFile>./TestScripts/globalConfiguration/currency.xml</suiteXmlFile>
+						<suiteXmlFile>./TestScripts/dbDeletion.xml</suiteXmlFile>
+						<suiteXmlFile>./TestScripts/profile.xml</suiteXmlFile> -->
+
+					</suiteXmlFiles>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-io</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-java</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-surefire-plugin</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+		</dependency>
+	</dependencies>
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.apache.commons</groupId>
+				<artifactId>commons-io</artifactId>
+				<version>1.3.2</version>
+			</dependency>
+			<dependency>
+				<groupId>org.seleniumhq.selenium</groupId>
+				<artifactId>selenium-java</artifactId>
+				<version>2.53.0</version>
+			</dependency>
+			<dependency>
+				<groupId>junit</groupId>
+				<artifactId>junit</artifactId>
+				<version>3.8.1</version>
+			</dependency>
+
+
+			<dependency>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.19.1</version>
+			</dependency>
+			<dependency>
+				<groupId>org.testng</groupId>
+				<artifactId>testng</artifactId>
+				<version>6.9.9</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.poi</groupId>
+				<artifactId>poi-ooxml</artifactId>
+				<version>3.16-beta1</version>
+			</dependency>
+			<dependency>
+				<groupId>mysql</groupId>
+				<artifactId>mysql-connector-java</artifactId>
+				<version>5.1.6</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
+</project>

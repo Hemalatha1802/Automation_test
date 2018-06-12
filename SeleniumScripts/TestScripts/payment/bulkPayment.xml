@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Bulk Payment File Upload Suite">
+	<test name="Bulk Payment File Upload" preserve-order="true">
+		<classes>
+			<class name="com.mode.TestNG.payment.BulkPaymentFileUpload">
+				<methods>
+					<include name="login" />
+					<include name="selectingMaker" />
+					<include name="upload" />
+					<include name="logout" />
+					<include name="checkerLogin" />
+					<include name="selectChecker" />
+					<include name="searchChecker" />
+					<include name="approve" />
+					<exclude name="deny" />
+					<include name="approveGroup" />
+					<exclude name="denyGroup" />
+					<include name="selectAdmin" /> 
+					<include name="searchAdmin" />
+					<include name="view" />
+					<include name="checkerLogout" />
+
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite> 

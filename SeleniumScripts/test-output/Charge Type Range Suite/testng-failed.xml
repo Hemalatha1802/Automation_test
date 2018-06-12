@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Charge Type Range Suite]">
+  <test name="Charge Type range(failed)">
+    <classes>
+      <class name="com.mode.TestNG.configuration.ChargeTypeRange">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="resetApproval"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.mode.TestNG.configuration.ChargeTypeRange -->
+    </classes>
+  </test> <!-- Charge Type range(failed) -->
+</suite> <!-- Failed suite [Charge Type Range Suite] -->

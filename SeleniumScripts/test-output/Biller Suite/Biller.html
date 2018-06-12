@@ -1,0 +1,255 @@
+<html>
+<head>
+<title>TestNG:  Biller</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Biller</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>17/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Oct 23 14:43:49 IST 2017</td>
+</tr>
+<tr><td>Total time:</td><td>75 seconds (75586 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.mode.TestNG.partners.Biller.approvalHistory()'><b>approvalHistory</b><br>Test class: com.mode.TestNG.partners.Biller<br/>
+<a href="#Output-790021811" onClick='toggleBox("Output-790021811", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-790021811" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-790021811">
+ Biller Approval History test case pass<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.mode.TestNG.partners.Biller@4566e5bd</td></tr>
+<tr>
+<td title='com.mode.TestNG.partners.Biller.approve()'><b>approve</b><br>Test class: com.mode.TestNG.partners.Biller<br/>
+<a href="#Output-2073299099" onClick='toggleBox("Output-2073299099", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2073299099" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2073299099">
+Biller record Approved<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>com.mode.TestNG.partners.Biller@4566e5bd</td></tr>
+<tr>
+<td title='com.mode.TestNG.partners.Biller.auditLog()'><b>auditLog</b><br>Test class: com.mode.TestNG.partners.Biller<br/>
+<a href="#Output-322112198" onClick='toggleBox("Output-322112198", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-322112198" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-322112198">
+ Biller Audit Log test case pass<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.mode.TestNG.partners.Biller@4566e5bd</td></tr>
+<tr>
+<td title='com.mode.TestNG.partners.Biller.checkerLogin()'><b>checkerLogin</b><br>Test class: com.mode.TestNG.partners.Biller</td>
+<td></td>
+<td>3</td>
+<td>com.mode.TestNG.partners.Biller@4566e5bd</td></tr>
+<tr>
+<td title='com.mode.TestNG.partners.Biller.checkerLogout()'><b>checkerLogout</b><br>Test class: com.mode.TestNG.partners.Biller</td>
+<td></td>
+<td>1</td>
+<td>com.mode.TestNG.partners.Biller@4566e5bd</td></tr>
+<tr>
+<td title='com.mode.TestNG.partners.Biller.edit()'><b>edit</b><br>Test class: com.mode.TestNG.partners.Biller<br/>
+<a href="#Output-835146383" onClick='toggleBox("Output-835146383", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-835146383" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-835146383">
+Updated Biller details<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>com.mode.TestNG.partners.Biller@4566e5bd</td></tr>
+<tr>
+<td title='com.mode.TestNG.partners.Biller.login()'><b>login</b><br>Test class: com.mode.TestNG.partners.Biller<br/>
+<a href="#Output-1644236636" onClick='toggleBox("Output-1644236636", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1644236636" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1644236636">
+Logged into Application <br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.mode.TestNG.partners.Biller@4566e5bd</td></tr>
+<tr>
+<td title='com.mode.TestNG.partners.Biller.logout()'><b>logout</b><br>Test class: com.mode.TestNG.partners.Biller</td>
+<td></td>
+<td>1</td>
+<td>com.mode.TestNG.partners.Biller@4566e5bd</td></tr>
+<tr>
+<td title='com.mode.TestNG.partners.Biller.register()'><b>register</b><br>Test class: com.mode.TestNG.partners.Biller<br/>
+<a href="#Output-1677458155" onClick='toggleBox("Output-1677458155", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1677458155" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1677458155">
+Biller record is created <br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.mode.TestNG.partners.Biller@4566e5bd</td></tr>
+<tr>
+<td title='com.mode.TestNG.partners.Biller.searchAdmin()'><b>searchAdmin</b><br>Test class: com.mode.TestNG.partners.Biller<br/>
+<a href="#Output-1077873186" onClick='toggleBox("Output-1077873186", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1077873186" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1077873186">
+performed search based on Biller acc no<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>com.mode.TestNG.partners.Biller@4566e5bd</td></tr>
+<tr>
+<td title='com.mode.TestNG.partners.Biller.searchChecker()'><b>searchChecker</b><br>Test class: com.mode.TestNG.partners.Biller<br/>
+<a href="#Output-877612522" onClick='toggleBox("Output-877612522", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-877612522" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-877612522">
+performed search based on Biller Account<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>com.mode.TestNG.partners.Biller@4566e5bd</td></tr>
+<tr>
+<td title='com.mode.TestNG.partners.Biller.searchMaker()'><b>searchMaker</b><br>Test class: com.mode.TestNG.partners.Biller<br/>
+<a href="#Output-1355887174" onClick='toggleBox("Output-1355887174", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1355887174" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1355887174">
+performed search based on Biller account<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>com.mode.TestNG.partners.Biller@4566e5bd</td></tr>
+<tr>
+<td title='com.mode.TestNG.partners.Biller.selectAdmin()'><b>selectAdmin</b><br>Test class: com.mode.TestNG.partners.Biller<br/>
+<a href="#Output-1866229258" onClick='toggleBox("Output-1866229258", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1866229258" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1866229258">
+Biller menu selected<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>com.mode.TestNG.partners.Biller@4566e5bd</td></tr>
+<tr>
+<td title='com.mode.TestNG.partners.Biller.selectChecker()'><b>selectChecker</b><br>Test class: com.mode.TestNG.partners.Biller</td>
+<td></td>
+<td>2</td>
+<td>com.mode.TestNG.partners.Biller@4566e5bd</td></tr>
+<tr>
+<td title='com.mode.TestNG.partners.Biller.selectingMaker()'><b>selectingMaker</b><br>Test class: com.mode.TestNG.partners.Biller<br/>
+<a href="#Output-1703009290" onClick='toggleBox("Output-1703009290", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1703009290" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1703009290">
+Selected Biller Menu<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>com.mode.TestNG.partners.Biller@4566e5bd</td></tr>
+<tr>
+<td title='com.mode.TestNG.partners.Biller.submitRecord()'><b>submitRecord</b><br>Test class: com.mode.TestNG.partners.Biller<br/>
+<a href="#Output-192694377" onClick='toggleBox("Output-192694377", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-192694377" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-192694377">
+Biller record submitted successfully<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>com.mode.TestNG.partners.Biller@4566e5bd</td></tr>
+<tr>
+<td title='com.mode.TestNG.partners.Biller.view()'><b>view</b><br>Test class: com.mode.TestNG.partners.Biller<br/>
+<a href="#Output-1874028013" onClick='toggleBox("Output-1874028013", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1874028013" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1874028013">
+View Biller Successful<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>com.mode.TestNG.partners.Biller@4566e5bd</td></tr>
+</table><p>
+</body>
+</html>

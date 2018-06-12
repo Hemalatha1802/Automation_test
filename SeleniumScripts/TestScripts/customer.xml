@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Customer Suite">
+  <test name="Customer" preserve-order="true">
+		<classes>
+			<class name="com.mode.TestNG.CustomerTest">
+				<methods>
+					<exclude name="loginWithEmptyDetails" />
+					<exclude name="loginFailure" />
+					<include name="login" />
+					<include name="selectingMaker" />
+					<include name="register" />
+					<include name="searchMaker" />
+					<include name="edit" />
+					<include name="auditLog" />
+					<include name="approvalHistory" />
+					<include name="submitRecord" /> 
+					<include name="logout" />
+					<include name="checkerLogin" />
+					<include name="selectChecker" />
+					<include name="searchChecker" />
+					<include name="approve" />
+					<exclude name="deny" />
+					<include name="selectAdmin" />
+					<include name="searchAdmin" />
+					<include name="view" />
+					<include name="resetCustomerMPin" />
+					<include name="resetCustomerTPin" />
+					<include name="blockCustomer" />
+					<include name="unblockCustomer" />
+					<include name="checkerLogout" /> 
+					
+
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite> <!-- Suite -->

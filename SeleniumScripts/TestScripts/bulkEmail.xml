@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Bulk Email Suite">
+  <test name="Bulk Email" preserve-order="true">
+		<classes>
+			<class name="com.mode.TestNG.BulkEmail">
+				<methods>
+					
+					<include name="login" />
+					<include name="selectingEmailUpload" />
+					<include name="uploadFile" />
+					<include name="toCustomerGroup" /> 
+					<include name="toUserGroup" />
+					<include name="toSpecificList" />
+					<include name="logout" />
+										
+
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite> <!-- Suite -->

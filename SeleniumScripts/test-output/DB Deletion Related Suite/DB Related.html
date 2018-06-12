@@ -1,0 +1,187 @@
+<html>
+<head>
+<title>TestNG:  DB Related</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>DB Related</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>9/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Oct 23 15:33:07 IST 2017</td>
+</tr>
+<tr><td>Total time:</td><td>1 seconds (1183 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.mode.TestNG.DBDeletion.deleteAccountRecord()'><b>deleteAccountRecord</b><br>Test class: com.mode.TestNG.DBDeletion<br/>
+<a href="#Output-1321530272" onClick='toggleBox("Output-1321530272", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1321530272" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1321530272">
+Account Record deleted successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.mode.TestNG.DBDeletion@6e1567f1</td></tr>
+<tr>
+<td title='com.mode.TestNG.DBDeletion.deleteBillerRecord()'><b>deleteBillerRecord</b><br>Test class: com.mode.TestNG.DBDeletion<br/>
+<a href="#Output-1325124186" onClick='toggleBox("Output-1325124186", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1325124186" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1325124186">
+Biller Record deleted successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.mode.TestNG.DBDeletion@6e1567f1</td></tr>
+<tr>
+<td title='com.mode.TestNG.DBDeletion.deleteCustomerRecord()'><b>deleteCustomerRecord</b><br>Test class: com.mode.TestNG.DBDeletion<br/>
+<a href="#Output-371439501" onClick='toggleBox("Output-371439501", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-371439501" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-371439501">
+Customer Record deleted successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.mode.TestNG.DBDeletion@6e1567f1</td></tr>
+<tr>
+<td title='com.mode.TestNG.DBDeletion.deleteJointAccountApproverRecord()'><b>deleteJointAccountApproverRecord</b><br>Test class: com.mode.TestNG.DBDeletion<br/>
+<a href="#Output-1008315045" onClick='toggleBox("Output-1008315045", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1008315045" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1008315045">
+Joint Account Approver Record deleted successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.mode.TestNG.DBDeletion@6e1567f1</td></tr>
+<tr>
+<td title='com.mode.TestNG.DBDeletion.deleteJointAccountRecord()'><b>deleteJointAccountRecord</b><br>Test class: com.mode.TestNG.DBDeletion<br/>
+<a href="#Output-1239759990" onClick='toggleBox("Output-1239759990", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1239759990" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1239759990">
+Joint Account Approver Record deleted successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.mode.TestNG.DBDeletion@6e1567f1</td></tr>
+<tr>
+<td title='com.mode.TestNG.DBDeletion.deleteProviderRecord()'><b>deleteProviderRecord</b><br>Test class: com.mode.TestNG.DBDeletion<br/>
+<a href="#Output-440938038" onClick='toggleBox("Output-440938038", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-440938038" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-440938038">
+Airtime Provider Record deleted successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.mode.TestNG.DBDeletion@6e1567f1</td></tr>
+<tr>
+<td title='com.mode.TestNG.DBDeletion.deleteUserRecord()'><b>deleteUserRecord</b><br>Test class: com.mode.TestNG.DBDeletion<br/>
+<a href="#Output-1954406292" onClick='toggleBox("Output-1954406292", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1954406292" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1954406292">
+System User record deleted successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.mode.TestNG.DBDeletion@6e1567f1</td></tr>
+<tr>
+<td title='com.mode.TestNG.DBDeletion.deleteWalletAccountRecord()'><b>deleteWalletAccountRecord</b><br>Test class: com.mode.TestNG.DBDeletion<br/>
+<a href="#Output-1118078504" onClick='toggleBox("Output-1118078504", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1118078504" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1118078504">
+Wallet Account Record deleted successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.mode.TestNG.DBDeletion@6e1567f1</td></tr>
+<tr>
+<td title='com.mode.TestNG.DBDeletion.deleteWalletCustomerRecord()'><b>deleteWalletCustomerRecord</b><br>Test class: com.mode.TestNG.DBDeletion<br/>
+<a href="#Output-1334042472" onClick='toggleBox("Output-1334042472", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1334042472" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1334042472">
+Wallet Customer Record deleted successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.mode.TestNG.DBDeletion@6e1567f1</td></tr>
+</table><p>
+</body>
+</html>

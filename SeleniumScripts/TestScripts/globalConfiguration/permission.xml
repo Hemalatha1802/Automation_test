@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Permission Suite">
+  <test name="Permission" preserve-order="true">
+		<classes>
+			<class name="com.mode.TestNG.globalConfiguration.Permission">
+				<methods>
+					
+					<include name="login" />
+					<include name="createPermissionRecord" />
+					<include name="searchMaker" />
+					<include name="edit" />
+					<include name="auditLog" />
+					<include name="logout" />
+								
+
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite> <!-- Suite -->

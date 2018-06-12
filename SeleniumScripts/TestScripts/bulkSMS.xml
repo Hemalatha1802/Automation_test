@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Bulk SMS Suite">
+  <test name="Bulk SMS" preserve-order="true">
+		<classes>
+			<class name="com.mode.TestNG.BulkSMS">
+				<methods>
+					
+					<include name="login" />
+					<include name="selectingSMSUpload" />
+					<include name="uploadFile" />
+					<include name="toCustomerGroup" />
+					<include name="toUserGroup" />
+					<include name="toCAAppUser" /> 
+					<include name="toSpecificList" />
+					<include name="logout" />
+										
+
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite> <!-- Suite -->

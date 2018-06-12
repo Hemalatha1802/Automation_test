@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Service Permission Suite">
+	<test name="Service Permission" preserve-order="true">
+		<classes>
+			<class name="com.mode.TestNG.configuration.ServicePermissions">
+				<methods>
+					<include name="login" />
+					<include name="selectingMaker" />
+					<include name="register" />
+					<include name="searchMaker" />
+					<include name="edit" />
+					<include name="auditLog" />
+					<include name="approvalHistory" />
+					<include name="submitRecord" />
+					<include name="logout" />
+					<include name="checkerLogin" />
+					<include name="selectChecker" />
+					<include name="searchchecker" />
+					<include name="approve" />
+					<exclude name="deny" />
+					<include name="selectAdmin" /> 
+					<include name="searchAdmin" />
+					<include name="view" />
+					<include name="deleteRecord" />
+					<include name="checkerLogout" />
+
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite> 

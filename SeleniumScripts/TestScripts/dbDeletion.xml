@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="DB Deletion Related Suite">
+	<test name="DB Related" preserve-order="true">
+		<classes>
+			<class name="com.mode.TestNG.DBDeletion">
+				<methods>
+					
+					<include name="deleteCustomerRecord" />
+					<include name="deleteAccountRecord" />
+					<include name="deleteBillerRecord" />
+					<include name="deleteProviderRecord" />
+					<include name="deleteUserRecord" />
+					<include name="deleteWalletCustomerRecord" />
+					<include name="deleteWalletAccountRecord" />
+					<include name="deleteJointAccountApproverRecord" />
+					<include name="deleteJointAccountRecord" />
+
+				</methods>
+			</class>
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

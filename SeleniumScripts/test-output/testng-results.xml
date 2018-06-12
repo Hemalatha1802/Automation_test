@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="9" passed="9">
+  <reporter-output>
+    <line>
+      <![CDATA[Customer Record deleted successfully]]>
+    </line>
+    <line>
+      <![CDATA[Account Record deleted successfully]]>
+    </line>
+    <line>
+      <![CDATA[Biller Record deleted successfully]]>
+    </line>
+    <line>
+      <![CDATA[Airtime Provider Record deleted successfully]]>
+    </line>
+    <line>
+      <![CDATA[System User record deleted successfully]]>
+    </line>
+    <line>
+      <![CDATA[Wallet Customer Record deleted successfully]]>
+    </line>
+    <line>
+      <![CDATA[Wallet Account Record deleted successfully]]>
+    </line>
+    <line>
+      <![CDATA[Joint Account Approver Record deleted successfully]]>
+    </line>
+    <line>
+      <![CDATA[Joint Account Approver Record deleted successfully]]>
+    </line>
+  </reporter-output>
+  <suite name="DB Deletion Related Suite" duration-ms="1183" started-at="2017-10-23T10:03:07Z" finished-at="2017-10-23T10:03:08Z">
+    <groups>
+    </groups>
+    <test name="DB Related" duration-ms="1183" started-at="2017-10-23T10:03:07Z" finished-at="2017-10-23T10:03:08Z">
+      <class name="com.mode.TestNG.DBDeletion">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.mode.TestNG.DBDeletion@6e1567f1]" name="beforeClass" is-config="true" duration-ms="281" started-at="2017-10-23T15:33:07Z" finished-at="2017-10-23T15:33:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="deleteCustomerRecord()[pri:0, instance:com.mode.TestNG.DBDeletion@6e1567f1]" name="deleteCustomerRecord" duration-ms="566" started-at="2017-10-23T15:33:07Z" finished-at="2017-10-23T15:33:08Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Customer Record deleted successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- deleteCustomerRecord -->
+        <test-method status="PASS" signature="deleteAccountRecord()[pri:0, instance:com.mode.TestNG.DBDeletion@6e1567f1]" name="deleteAccountRecord" duration-ms="58" started-at="2017-10-23T15:33:08Z" finished-at="2017-10-23T15:33:08Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Account Record deleted successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- deleteAccountRecord -->
+        <test-method status="PASS" signature="deleteBillerRecord()[pri:0, instance:com.mode.TestNG.DBDeletion@6e1567f1]" name="deleteBillerRecord" duration-ms="24" started-at="2017-10-23T15:33:08Z" finished-at="2017-10-23T15:33:08Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Biller Record deleted successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- deleteBillerRecord -->
+        <test-method status="PASS" signature="deleteProviderRecord()[pri:0, instance:com.mode.TestNG.DBDeletion@6e1567f1]" name="deleteProviderRecord" duration-ms="30" started-at="2017-10-23T15:33:08Z" finished-at="2017-10-23T15:33:08Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Airtime Provider Record deleted successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- deleteProviderRecord -->
+        <test-method status="PASS" signature="deleteUserRecord()[pri:0, instance:com.mode.TestNG.DBDeletion@6e1567f1]" name="deleteUserRecord" duration-ms="20" started-at="2017-10-23T15:33:08Z" finished-at="2017-10-23T15:33:08Z">
+          <reporter-output>
+            <line>
+              <![CDATA[System User record deleted successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- deleteUserRecord -->
+        <test-method status="PASS" signature="deleteWalletCustomerRecord()[pri:0, instance:com.mode.TestNG.DBDeletion@6e1567f1]" name="deleteWalletCustomerRecord" duration-ms="23" started-at="2017-10-23T15:33:08Z" finished-at="2017-10-23T15:33:08Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Wallet Customer Record deleted successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- deleteWalletCustomerRecord -->
+        <test-method status="PASS" signature="deleteWalletAccountRecord()[pri:0, instance:com.mode.TestNG.DBDeletion@6e1567f1]" name="deleteWalletAccountRecord" duration-ms="18" started-at="2017-10-23T15:33:08Z" finished-at="2017-10-23T15:33:08Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Wallet Account Record deleted successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- deleteWalletAccountRecord -->
+        <test-method status="PASS" signature="deleteJointAccountApproverRecord()[pri:0, instance:com.mode.TestNG.DBDeletion@6e1567f1]" name="deleteJointAccountApproverRecord" duration-ms="18" started-at="2017-10-23T15:33:08Z" finished-at="2017-10-23T15:33:08Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Joint Account Approver Record deleted successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- deleteJointAccountApproverRecord -->
+        <test-method status="PASS" signature="deleteJointAccountRecord()[pri:0, instance:com.mode.TestNG.DBDeletion@6e1567f1]" name="deleteJointAccountRecord" duration-ms="104" started-at="2017-10-23T15:33:08Z" finished-at="2017-10-23T15:33:08Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Joint Account Approver Record deleted successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- deleteJointAccountRecord -->
+      </class> <!-- com.mode.TestNG.DBDeletion -->
+    </test> <!-- DB Related -->
+  </suite> <!-- DB Deletion Related Suite -->
+</testng-results>

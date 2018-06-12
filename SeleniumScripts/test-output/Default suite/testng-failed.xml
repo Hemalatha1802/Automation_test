@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="com.mode.TestNG.AccountTest">
+        <methods>
+          <include name="selectAccountAdmin"/>
+          <include name="viewAccount"/>
+          <include name="accountAuditLog"/>
+          <include name="searchcheckerAccount"/>
+          <include name="unblockAccount"/>
+          <include name="accountSubmitRecord"/>
+          <include name="accountApprovalHistory"/>
+          <include name="selectAccountChecker"/>
+          <include name="makerLogout"/>
+          <include name="searchAdminAccount"/>
+          <include name="afterClass"/>
+          <include name="selectMakerAccount"/>
+          <include name="searchAccount"/>
+          <include name="beforeClass"/>
+          <include name="editAccount"/>
+          <include name="approveAccount"/>
+          <include name="deleteCustomerRecord"/>
+          <include name="accountMakerLogin"/>
+          <include name="registerAccount"/>
+          <include name="accountCheckerLogin"/>
+          <include name="blockAccount"/>
+          <include name="accountCheckerLogout"/>
+          <include name="deleteAccountRecord"/>
+        </methods>
+      </class> <!-- com.mode.TestNG.AccountTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

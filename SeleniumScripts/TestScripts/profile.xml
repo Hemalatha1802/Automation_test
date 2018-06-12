@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Profile Suite">
+	<test name="Profile" preserve-order="true">
+		<classes>
+			<class name="com.mode.TestNG.ProfileTest">
+				<methods>
+
+					<include name="MakerLogin" />
+					<include name="selectMaker" />
+					<include name="register" />
+					<include name="search" />
+					<include name="edit" />
+					<include name="AuditLog" />
+					<include name="ApprovalHistory" />
+					<include name="SubmitRecord" />
+					<include name="MakerLogout" />
+				</methods>
+			</class>
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
