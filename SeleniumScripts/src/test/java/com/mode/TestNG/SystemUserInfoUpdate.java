@@ -52,7 +52,7 @@ public class SystemUserInfoUpdate {
 		dbconnect = new DBConnect();
 		prop = new PropertiesClass();
 
-		PropertiesClass.prop();
+		prop.prop();
 		// -------------- Launching Browser------------------
 		driver.launchBrowser();
 		Reporter.log("Browser Launched", true);

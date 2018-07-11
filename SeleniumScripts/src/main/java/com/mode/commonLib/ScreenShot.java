@@ -14,60 +14,63 @@ import org.testng.Reporter;
 public class ScreenShot implements ITestListener {
 	ExcelLib excel = new ExcelLib();
 	private static String fileSeperator = System.getProperty("file.separator");
-	public String file_created = "File created ";
+	public String file_created="File created ";
 
 	public void onFinish(ITestContext arg0) {
-		// Capture screen shots on test case completed
+		//Capture screen shots on test case completed
 	}
 
 	public void onStart(ITestContext result) {
 
 		// Cleaning Failed Screenshots before script runs
 		File src_failed = new File("\\SeleniumScripts\\screenshots\\failed_Sreenshots");
-		if (src_failed.exists()) {
-
-			try {
-				FileUtils.cleanDirectory(src_failed);
-			} catch (Exception e) {
-				e.printStackTrace();
-			}
+		
+		if(src_failed.exists()){
+		try {
+			FileUtils.cleanDirectory(src_failed);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 		}
 		// Cleaning Success Screenshots before script runs
 		File src_success = new File("\\SeleniumScripts\\screenshots\\success_Sreenshots");
-		if (src_success.exists()) {
-			try {
 
-				FileUtils.cleanDirectory(src_success);
+		if(src_success.exists()){
+		try {
 
-			} catch (Exception e) {
-				e.printStackTrace();
-			}
+			FileUtils.cleanDirectory(src_success);
 
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 		}
 		// Cleaning Skipped Screenshots before script runs
 		File src_skipped = new File("\\SeleniumScripts\\screenshots\\skipped_Screenshots");
-		if (src_skipped.exists()) {
-			try {
-				FileUtils.cleanDirectory(src_skipped);
-			} catch (Exception e) {
-				e.printStackTrace();
-			}
+		
+		if(src_skipped.exists()){
+		try {
+			FileUtils.cleanDirectory(src_skipped);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 		}
 	}
 
+	
+	
 	public void onTestFailedButWithinSuccessPercentage(ITestResult arg0) {
-		// Capture screen shots for test case success percentage
+		//Capture screen shots for test case success percentage
 	}
 
 	// capture Screen shot if test case gets fail
 	public void onTestFailure(ITestResult result) {
 
 		String testClassName = getTestClassName(result.getInstanceName()).trim();
-		File file = new File("\\SeleniumScripts\\screenshots\\failed_Sreenshots\\" + fileSeperator
-				+ testClassName + fileSeperator);
+		File file = new File("\\SeleniumScripts\\screenshots\\failed_Sreenshots\\"
+				+ fileSeperator + testClassName + fileSeperator);
 		String filepath = result.getMethod().getMethodName();
 		EventFiringWebDriver efw = new EventFiringWebDriver(DriverClass.driver);
-
+		
 		File src = efw.getScreenshotAs(OutputType.FILE);
 		File des = new File(
 				"\\SeleniumScripts\\screenshots\\failed_Sreenshots\\" + filepath + ".png");
@@ -139,7 +142,7 @@ public class ScreenShot implements ITestListener {
 	}
 
 	public void onTestStart(ITestResult result) {
-		// Capture screen shots on start of test case
+		//Capture screen shots on start of test case 
 	}
 
 	// capture Screen shot if test case gets pass

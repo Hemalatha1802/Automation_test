@@ -39,7 +39,7 @@ public class ProfileTest {
 		excel = new ExcelLib();
 		prop = new PropertiesClass();
 
-		PropertiesClass.prop();
+		prop.prop();
 		// -------------- Launching Browser------------------
 		driver.launchBrowser();
 		Reporter.log("Browser Launched", true);

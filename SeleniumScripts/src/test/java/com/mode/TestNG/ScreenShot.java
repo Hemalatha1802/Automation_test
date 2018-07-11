@@ -12,7 +12,7 @@ public class ScreenShot {
   @Test
   public void f() {
 	  
-	  File backup_screenshot = new File("\\Selenium\\Framework\\SeleniumScripts\\backup_screens");
+	  File backup_screenshot = new File("/SeleniumScripts/backup_screens");
 	  try {
 		FileUtils.cleanDirectory(backup_screenshot);
 	} catch (IOException e) {

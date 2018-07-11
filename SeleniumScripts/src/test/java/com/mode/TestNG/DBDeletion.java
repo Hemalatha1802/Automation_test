@@ -33,7 +33,7 @@ public class DBDeletion {
 		dbconnect = new DBConnect();
 		prop=new PropertiesClass();
 				
-		PropertiesClass.prop();
+		prop.prop();
 		
 		module_data = excel.getdata("Modules");
 	}

@@ -1,8 +1,8 @@
 package com.mode.commonLib;
 
-import java.io.File;
-import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.io.InputStream;
 import java.util.Properties;
 
 public class PropertiesClass {
@@ -14,29 +14,35 @@ public class PropertiesClass {
 	public static String emailfile="";
 	public static String paymentfile="";
 	
-	
+	private Properties prop = null;
 	// to get the properties from properties file
-	public static  void prop() throws IOException {
+	public  void prop() throws IOException {
 
-		File file = new File("\\Selenium\\Framework\\SeleniumScripts\\TestData\\data.properties");
-		FileInputStream fileInput = new FileInputStream(file);
-		Properties properties = new Properties();
-		properties.load(fileInput);
-		fileInput.close();
+		InputStream is = null;
+		try {
+			this.prop = new Properties();
+			is = this.getClass().getResourceAsStream("/data.properties");
+			prop.load(is);
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 
 		
-		 url = properties.getProperty("url");
-		 filepath = properties.getProperty("filepath");
-		 browser = properties.getProperty("browser");
-		 smsfile=properties.getProperty("smsfile");
-		 emailfile=properties.getProperty("emailfile");
-		 paymentfile=properties.getProperty("paymentfile");
+		 url = prop.getProperty("url");
+		 filepath = prop.getProperty("filepath");
+		 browser = prop.getProperty("browser");
+		 smsfile=prop.getProperty("smsfile");
+		 emailfile=prop.getProperty("emailfile");
+		 paymentfile=prop.getProperty("paymentfile");
 	}
 	
 	public static void main(String[] args) {
 		
 		try {
-			PropertiesClass.prop();
+			PropertiesClass pro=new PropertiesClass();
+			pro.prop();
 		} catch (IOException e) {
 			
 			e.printStackTrace();

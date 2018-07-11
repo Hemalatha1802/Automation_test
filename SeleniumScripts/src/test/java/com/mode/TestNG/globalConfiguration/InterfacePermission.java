@@ -41,7 +41,7 @@ public class InterfacePermission {
 
 		prop = new PropertiesClass();
 
-		PropertiesClass.prop();
+		prop.prop();
 		// -------------- Launching Browser------------------
 		driver.launchBrowser();
 		Reporter.log("Browser Launched", true);
