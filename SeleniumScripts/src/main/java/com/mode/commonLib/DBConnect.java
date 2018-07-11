@@ -41,7 +41,6 @@ public class DBConnect {
 
 			e.printStackTrace();
 		}
-
 		
 
 	}
